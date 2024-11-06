@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom structure 2</title>
+</head>
+<body>
+    <div class="bg-green" id="div" >
+        <h1 class="master" id="main">Chai aur code</h1>
+        <p>Lorem ipsum dolor sit amet1.</p>
+        <p>Lorem ipsum dolor sit amet2.</p>
+        <p>Lorem ipsum dolor sit amet3.</p>
+        <p>Lorem ipsum dolor sit amet4.</p>
+    </div>
+
+    <input type="password" name="" id="">
+
+    <div class="another">
+        <p>Lorem ipsum dolor sit1 1.<span style="display: none;"> Lorem ipsum dolor sit amet2.</span></p>
+    </div>
+</body>
+</html>
+
+<!--
+
+document.getElementById("main")
+<h1 class=​"master" id=​"main">​Chai aur code​</h1>​
+
+const main = document.getElementById("main")
+undefined
+
+main
+<h1 class=​"master" id=​"main">​Chai aur code​</h1>​
+
+main.style.backgroundColor = "green"
+'green'
+
+main.getAttributeNames()
+(3) ['class', 'id', 'style']0: "class"1: "id"2: "style"length: 3[[Prototype]]: Array
+
+main.getAnimations()
+[]length: 0[[Prototype]]: Array(0)
+
+main.getAttributeNames("className")
+(3) ['class', 'id', 'style']0: "class"1: "id"2: "style"length: 3[[Prototype]]: Array(0)
+
+main.getAttributeNames("id")
+(3) ['class', 'id', 'style']
+
+main.getAttributeNames("master")
+(3) ['class', 'id', 'style']
+
+document.getElementById("main")
+<h1 class=​"master" id=​"main" style=​"background-color:​ green;​">​Chai aur code​</h1>​
+
+main
+<h1 class=​"master" id=​"main" style=​"background-color:​ green;​">​Chai aur code​</h1>​
+
+main.setAttribute("className" , "header")
+undefined
+
+main
+
+<h1 class=​"master" id=​"main" style=​"background-color:​ green;​" classname=​"header">​Chai aur code​</h1>​
+
+main.setAttribute("class" , "header")
+undefined
+main
+<h1 class=​"header" id=​"main" style=​"background-color:​ green;​" classname=​"header">​Chai aur code​</h1>​
+main.setAttribute("class" , "header master")
+undefined
+main
+<h1 class=​"header master" id=​"main" style=​"background-color:​ green;​" classname=​"header">​Chai aur code​</h1>​
+index-610e9d44.js:16 Auth init failed in axios {message: 'A listener indicated an asynchronous response by r…age channel closed before a response was received'}
+(anonymous) @ index-610e9d44.js:16
+Show 1 more frame
+Show less
+main.getAttributeNode("className")
+classname=​"header"
+main.getAttributeNode("class")
+class=​"header master"
+main.getAttributeNames("className")
+(4) ['class', 'id', 'style', 'classname']
+
+
+const another = document.getElementsByClassName("another")
+undefined
+const p = another[0]
+undefined
+p
+<div class=​"another">​…​</div>​
+p
+<div class=​"another">​…​</div>​
+p.innerText
+'Lorem ipsum dolor sit1 1.'
+p.textContent
+'\n        Lorem ipsum dolor sit1 1. Lorem ipsum dolor sit amet2.\n    '
+p.innerHTML
+'\n        <p>Lorem ipsum dolor sit1 1.<span style="display: none;"> Lorem ipsum dolor sit amet2.</span></p>\n    '
+-->
