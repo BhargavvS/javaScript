@@ -10,9 +10,9 @@
 
 // comapriosn of diiffrent Data Types
 
-// console.log("2" > 2);
-// console.log("2" ==2);
-// console.log("2" < 2);
+// console.log("2" > 2); // here "2" => 2 
+// console.log("2" ==2); // same
+// console.log("2" < 2); // no convertion 
 
 // not recommanded to compare two diifrent data Types at a time 
 // doesn't give predicteable results always due to type convertion
